@@ -1,0 +1,31 @@
+[package]
+name = "wc"
+version = "0.1.0"
+description = "WebComponents in rust"
+license = "MIT"
+authors = ["Michal Hornický <semtexzv@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies.web-sys]
+version = "*"
+features = [
+    "Window",
+    "CustomElementRegistry",
+
+  "Document",
+  "Element",
+  "HtmlElement",
+  "Node",
+"Window",
+]
+
+[dependencies.js-sys]
+version = "*"
+features = []
+
+[dependencies]
+wasm-bindgen = "*"
+
