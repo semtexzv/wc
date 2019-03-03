@@ -1,3 +1,4 @@
-import ("./pkg").then(module => {
-    module.run()
-});
+
+
+import module from './wc/Cargo.toml'
+module.run();

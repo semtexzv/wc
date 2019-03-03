@@ -1,0 +1,49 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn dev
+
+PATH: 
+  /home/semtexzv/.cargo/bin:/opt/google-cloud-sdk/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  11.10.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/semtexzv/wc/package.json: Unexpected token } in JSON at position 135
+      at JSON.parse (<anonymous>)
+      at /usr/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /usr/lib/node_modules/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "rust-wc",
+    "license": "MIT",
+    "version": "0.1.0",
+    "dependencies": {
+      "@webcomponents/webcomponentsjs": "^2.2.7",
+    },
+    "scripts": {
+      "dev": "parcel index.html"
+    },
+    "devDependencies": {
+      "parcel-bundler": "1.11.0",
+      "@babel/core": "^7.3.4",
+      "@babel/preset-env": "^7.3.4",
+  
+      "parcel-plugin-wasm.rs": "^1.2.8",
+      "parcel-plugin-webcomponents": "^1.0.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

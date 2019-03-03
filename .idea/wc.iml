@@ -2,11 +2,20 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wc/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/wc/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wc/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/wc/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/wc-test/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wc-test/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wc-test/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/wc-test/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/wc-test/target" />
+      <excludeFolder url="file://$MODULE_DIR$/wc/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

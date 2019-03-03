@@ -1,0 +1,38 @@
+[package]
+name = "wc"
+version = "0.1.0"
+description = "WebComponents in rust"
+license = "MIT"
+authors = ["Michal Hornický <semtexzv@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[build]
+target = "wasm32-unknown-unknown"
+
+[dependencies.web-sys]
+version = "*"
+features = [
+    "console",
+    "Window",
+    "CustomElementRegistry",
+
+  "Document",
+  "Element",
+  "HtmlElement",
+  "Node",
+"Window",
+]
+
+[dependencies.js-sys]
+version = "*"
+features = []
+
+[dependencies]
+console_error_panic_hook = { version = "*" }
+console-web = "*"
+wee_alloc = "*"
+wasm-bindgen = "*"
+
